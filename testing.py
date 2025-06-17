@@ -3,7 +3,7 @@ import unittest
 
 def uravnenie(x):
     xrad = math.radians(x)
-    return  ((math.sin(xrad))/(xrad - (2 * math.cos(xrad))) + math.sqrt(((2 * math.tan(xrad))- xrad)/(xrad)))
+    return  ((math.sin(xrad))/(xrad - (2 * math.cos(xrad))) + math.sqrt(((2 * math.tan(xrad))- 1)/(xrad)))
 
 def func(x):
     try:
@@ -23,12 +23,11 @@ def func(x):
         result = f"Тип ошибки: {e}"
     return result
 
-
 '''
-1 положительное
-2 отрицательное
-3 нуль
-4 текст
-5 пустой ввод
-6 дробное
+1 положительное +
+2 отрицательное +
+3 нуль -
+4 текст -
+5 пустой ввод -
+6 дробное +
 '''
