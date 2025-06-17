@@ -3,9 +3,8 @@ import unittest
 
 def uravnenie(x):
     xrad = math.radians(x)
-    
-    result = ((math.sin(xrad))/(xrad - (2 * math.cos(xrad))) + math.sqrt(((2 * math.tan(xrad))- xrad)/(xrad)))
-    return result
+    return  ((math.sin(xrad))/(xrad - (2 * math.cos(xrad))) + math.sqrt(((2 * math.tan(xrad))- xrad)/(xrad)))
+
 def func(x):
     try:
         result = uravnenie(x)
